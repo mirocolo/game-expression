@@ -8,20 +8,20 @@ import com.snowcattle.game.expression.Expression;
  */
 public class StaticExpression implements Expression {
 
-    private static final long serialVersionUID = -6060431150586251801L;
+	private static final long serialVersionUID = -6060431150586251801L;
 
-    private int value;
+	private int value;
 
-    public StaticExpression(int value) {
-        this.value = value;
-    }
+	public StaticExpression(int value) {
+		this.value = value;
+	}
 
-    /* (non-Javadoc)
-     * @see com.renren.socialgame.commons.dao.config.Expression#getValue(int)
-     */
-    @Override
-    public long getValue(long key) {
-        return value;
-    }
+	/* (non-Javadoc)
+	 * @see com.renren.socialgame.commons.dao.config.Expression#getValue(int)
+	 */
+	@Override
+	public long getValue(long key) {
+		return value;
+	}
 
 }

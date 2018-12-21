@@ -6,16 +6,16 @@ package com.snowcattle.game.expression.impl;
  */
 public class ModExpression extends BinaryOperationExpression {
 
-    private static final long serialVersionUID = 128643126283846133L;
+	private static final long serialVersionUID = 128643126283846133L;
 
-    @Override
-    public long getValue(long key) {
-        return left.getValue(key) % right.getValue(key);
-    }
+	@Override
+	public long getValue(long key) {
+		return left.getValue(key) % right.getValue(key);
+	}
 
-    @Override
-    public int getPriority() {
-        return 2;
-    }
+	@Override
+	public int getPriority() {
+		return 2;
+	}
 
 }

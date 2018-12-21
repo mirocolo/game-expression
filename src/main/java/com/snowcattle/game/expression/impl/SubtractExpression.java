@@ -6,16 +6,16 @@ package com.snowcattle.game.expression.impl;
  */
 public class SubtractExpression extends BinaryOperationExpression {
 
-    private static final long serialVersionUID = 1026380096191594448L;
+	private static final long serialVersionUID = 1026380096191594448L;
 
-    @Override
-    public long getValue(long key) {
-        return left.getValue(key) - right.getValue(key);
-    }
+	@Override
+	public long getValue(long key) {
+		return left.getValue(key) - right.getValue(key);
+	}
 
-    @Override
-    public int getPriority() {
-        return 1;
-    }
+	@Override
+	public int getPriority() {
+		return 1;
+	}
 
 }

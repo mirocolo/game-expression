@@ -8,27 +8,27 @@ import com.snowcattle.game.expression.Expression;
  */
 public abstract class BinaryOperationExpression implements Expression {
 
-    private static final long serialVersionUID = -176241089133898830L;
-    
-    protected Expression left;
-    protected Expression right;
+	private static final long serialVersionUID = -176241089133898830L;
 
-    public Expression getLeft() {
-        return left;
-    }
+	protected Expression left;
+	protected Expression right;
 
-    public void setLeft(Expression left) {
-        this.left = left;
-    }
+	public Expression getLeft() {
+		return left;
+	}
 
-    public Expression getRight() {
-        return right;
-    }
+	public void setLeft(Expression left) {
+		this.left = left;
+	}
 
-    public void setRight(Expression right) {
-        this.right = right;
-    }
+	public Expression getRight() {
+		return right;
+	}
 
-    public abstract int getPriority();
+	public void setRight(Expression right) {
+		this.right = right;
+	}
+
+	public abstract int getPriority();
 
 }

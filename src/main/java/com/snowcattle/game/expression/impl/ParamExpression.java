@@ -8,14 +8,14 @@ import com.snowcattle.game.expression.Expression;
  */
 public class ParamExpression implements Expression {
 
-    private static final long serialVersionUID = -1691851142296564067L;
+	private static final long serialVersionUID = -1691851142296564067L;
 
-    /* (non-Javadoc)
-     * @see com.renren.socialgame.commons.dao.config.Expression#getValue(int)
-     */
-    @Override
-    public long getValue(long key) {
-        return key;
-    }
+	/* (non-Javadoc)
+	 * @see com.renren.socialgame.commons.dao.config.Expression#getValue(int)
+	 */
+	@Override
+	public long getValue(long key) {
+		return key;
+	}
 
 }
